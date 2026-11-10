@@ -1,0 +1,25 @@
+Relato de caso:
+
+1. Golpista chega perguntando o nome do alvo
+2. Após confirmação o golpista já age enviando um pdf contendo um alavará para depositar dinheiro claramente falso
+3. A vítima alegou falta de interesse
+4. Golpista começou a relatar que o valor foi concluído por um perito judicial e a justiça ia liberar dinheiro
+5. Golpista insiste que tinha procuração da vítima e poderia resolver sozinho mas queria ajudar
+
+Pontos suspeitos na conversa:
+1. Usando autoridade de perito judicial para convencer a vítima da veracidade
+2. Dizendo que a justiça decidiu de maneira vaga sem citar decisão, datas ou sequer o processo
+3. Alegou que poderia resolver sozinho com uma suposta procuração
+4. Valor relativamente Alto para o padrão de 1 salário-mínimo mas não compatível com o caso
+5. Sem justificativa clara do porque ele estava entrando em contato
+
+Pontos suspeitos no PDF:
+1. Citou TJ mas não apontou estado
+2. Logo do STJ em uma decisão do "TJ"
+3. Selo dourado no canto superior direito para tentar imitar algum tipo de autoridade
+4. Assinaturas são vários rabiscos sobrepostos
+5. 4 Juízes assinaram um alvará
+6. Juízes sem sobrenome
+7. A formatação do texto estava estranha apontava Credor, Advogado e quanto tinha a receber mas não usa a palavra Réu todavia aponta que o Estado(que era o réu nesse caso especifico) era quem ia pagar.
+8. número do processo também estava visível mas pelo meio do texto ao invés de referência padrão no topo. Vale ressaltar que o número do processo era verdadeiro para tentar trazer veracidade
+9. Sem assinatura digital ou qr code que apontasse a veracidade do documento emitido pela justiça
