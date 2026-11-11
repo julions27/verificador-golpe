@@ -1,4 +1,5 @@
 SINAIS = {
+    # --- Conversa ---
     "C1": {"camada": "conversa", "descricao": "Pede pagamento ou transferência para liberar um valor que a pessoa teria a receber (ex.: 'custas', 'taxa do alvará', 'imposto do precatório')"},
     "C2": {"camada": "conversa", "descricao": "Pressiona por decisão ou pagamento imediato (ex.: prazo de poucas horas, 'só hoje')"},
     "C3": {"camada": "conversa", "descricao": "Oferece resolver tudo sozinho em nome da pessoa, como um atalho"},
@@ -7,7 +8,7 @@ SINAIS = {
     "C6": {"camada": "conversa", "descricao": "Insiste depois que a pessoa recusa ou demonstra desinteresse"},
     "C7": {"camada": "conversa", "descricao": "Pede pagamento para conta de pessoa física ou de um suposto escritório, em vez de guia oficial do tribunal"},
     "C8": {"camada": "conversa", "descricao": "Pede foto de documento, selfie ou vídeo"},
-    "C9": {"camada": "conversa", "descricao": "Envia links fora de domínios institucionais (ex.: fora de .jus.br, .oab.org.br ou .gov.br)"},
+    "C9": {"camada": "conversa", "descricao": "Envia links fora de domínios institucionais (ex.: fora de .jus.br, .gov.br, .oab.org.br, .def.br, .mp.br ou .leg.br)"},
     "C10": {"camada": "conversa", "descricao": "Começa a abordagem confirmando o nome da pessoa, sem se identificar"},
     "C11": {"camada": "conversa", "descricao": "Não explica o motivo do contato nem cita o processo de forma clara"},
     "C12": {"camada": "conversa", "descricao": "Se recusa ou desconversa quando a pessoa pede identificação (ex.: 'endereço do escritório', 'CNPJ', 'número da OAB')"},
@@ -17,6 +18,8 @@ SINAIS = {
     "C16": {"camada": "conversa", "descricao": "Anuncia que uma autoridade vai entrar em contato direto com a pessoa (ex.: 'o juiz vai te ligar', perito, servidor, BACEN, Defensoria)"},
     "C17": {"camada": "conversa", "descricao": "Pede pagamento para evitar um prejuízo (ex.: bloqueio de conta, multa, prisão, perda de prazo ou do benefício)"},
     "C18": {"camada": "conversa", "descricao": "Cobra honorários ou serviço jurídico sem contrato formal ou por serviço que a pessoa não contratou"},
+    "C19": {"camada": "conversa", "descricao": "Voz ou vídeo com aparência artificial ou travando (possível deepfake), ou jeito de falar diferente do habitual do advogado (ex.: 'a voz é dele mas tá robótica', 'o rosto travava')"},
+    "C20": {"camada": "conversa", "descricao": "Valor anunciado incompatível com o que a pessoa esperava do processo (ex.: 'meu processo era de 10 mil no máximo')"},
 
     "CN1": {"camada": "canal", "descricao": "Contato vem de número ou e-mail diferente do que a pessoa já tinha do advogado ou escritório"},
     "CN2": {"camada": "canal", "descricao": "Conta comercial desconhecida ou criada recentemente (ex.: 'Empresa cadastrada desde' poucos meses atrás)"},
