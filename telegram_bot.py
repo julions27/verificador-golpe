@@ -39,14 +39,20 @@ async def inicio(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Bem-vindo. Sou um robô projetado para lhe ajudar a identificar o golpe do falso advogado. Por favor cole as mensagens da conversa, não envie CPF, endereço nem dados bancários: a mensagem é analisada por um serviço de inteligência artificial externo.")
     
 def formatar(resultado):
-    if resultado["ia_falhou"]:
-        partes.append(
-            "Aviso: a análise por inteligência artificial está indisponível agora. "
-            "O resultado considera só as verificações automáticas."
-        )
-    
     partes = []
-    partes.append(MENSAGENS_RISCO[resultado["risco"]])
+
+    if resultado["ia_falhou"] and resultado["risco"] == "inconclusivo":
+        partes.append(
+            "Não consegui concluir a análise agora. Tente de novo em alguns minutos. "
+            "Enquanto isso, não pague nada nem envie dados."
+        )
+    else:
+        partes.append(MENSAGENS_RISCO[resultado["risco"]])
+        if resultado["ia_falhou"]:
+            partes.append(
+                "Aviso: a análise por inteligência artificial está indisponível agora. "
+                "O resultado considera só as verificações automáticas."
+            )
 
     grupos = {}
     for s in resultado["sinais"]:
@@ -71,8 +77,6 @@ async def botao(update: Update, context: ContextTypes.DEFAULT_TYPE):
     mensagens = context.user_data.setdefault("mensagens", [])
     mensagens.append(update.message.text)
 
-    # Da segunda mensagem em diante, só confirma o recebimento:
-    # a pergunta já foi feita e todas entram na mesma análise.
     if len(mensagens) > 1:
         await update.message.reply_text(
             "Recebi mais uma parte. Quando terminar, responda à pergunta acima."
