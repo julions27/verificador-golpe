@@ -32,7 +32,8 @@ def verificar(texto, ja_tinha_numero=None):
         validos, _ = analisar_ia(texto_ia)
         for s in validos:
             sinais.setdefault(s.codigo, s.model_dump()) 
-    except Exception:
+    except Exception as e:
+        print("Falha na IA:", repr(e))
         ia_falhou = True
 
     return {

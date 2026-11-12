@@ -1,5 +1,4 @@
 SINAIS = {
-    # --- Conversa ---
     "C1": {"camada": "conversa", "descricao": "Pede pagamento ou transferência para liberar um valor que a pessoa teria a receber (ex.: 'custas', 'taxa do alvará', 'imposto do precatório')"},
     "C2": {"camada": "conversa", "descricao": "Pressiona por decisão ou pagamento imediato (ex.: prazo de poucas horas, 'só hoje')"},
     "C3": {"camada": "conversa", "descricao": "Oferece resolver tudo sozinho em nome da pessoa, como um atalho"},
