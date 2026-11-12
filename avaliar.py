@@ -4,20 +4,13 @@ import time
 import sys
 from ia import analisar_ia, MODELO, PROMPT_VERSAO, SINAIS_IA
 from collections import Counter
+from verificador import decidir, OBJETIVAS
 
 from regras import analisar_regras, PALAVRAS
 
-FORTES = {"C1", "V1", "V2"}
 COBERTOS = {"V1", "V2", "C9"} | set(PALAVRAS)
 SO_CABECALHO = {"CN1", "CN2", "CN4"}
 CACHE = "resultados/cache_ia.jsonl"
-
-def decidir(codigos):
-    if len(codigos) >= 2 or codigos & FORTES:
-        return "alto"
-    if len(codigos) == 1:
-        return "medio"
-    return "inconclusivo"
 
 def remover_cabecalho(texto):
     linhas = texto.split("\n")
@@ -53,7 +46,6 @@ def avaliar(casos, modo, cenario, cache):
                 falhas.append((caso["id"], str(e)))
                 continue                     
             ia = {s["codigo"] for s in r["validos"]}
-            OBJETIVAS = {"V1", "V2", "C9"}
             if cenario == "ia":
                 apontados = ia
             elif cenario == "ia_objetivas":
