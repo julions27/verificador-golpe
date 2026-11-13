@@ -4,8 +4,6 @@ Ferramenta que analisa uma mensagem recebida por quem tem processo na Justiça e
 
 > Protótipo de portfólio. Não substitui a consulta ao processo no site do tribunal nem a conversa com o advogado.
 
-**Vídeo de demonstração:** [link do vídeo]
-
 ---
 
 ## O problema
